@@ -15,8 +15,7 @@ pipeline {
                 sh """docker image build -t exe:2.0 .
                       docker image tag exe:2.0 longflew/laxmitinku:2.0
                       docker image push longflew/laxmitinku:2.0
-                      docker container run -d -P longflew/laxmitinku:2.0"""
-                     
+                      docker container run -d -P longflew/laxmitinku:2.0"""       
             }
         }
     }
